@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroEasy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <!-- Slide 1: Main Menu -->
+    <section id="main-menu" class="slide">
+      <h1>🔌 ElectroEasy</h1>
+      <div class="mode-select">
+        <button id="btn-theory" onclick="selectMode('theory')">Theory</button>
+        <button id="btn-practical" onclick="selectMode('practical')">Practical</button>
+      </div>
+      <button id="btn-start" onclick="startGame()">Proceed</button>
+    </section>
+
+    <!-- Slide 2: Game Screen -->
+    <section id="game-screen" class="slide hidden">
+      <div class="game-header">
+        <span>Knowledge Check</span>
+        <span>Score: <strong id="grade">A+</strong></span>
+        <span>❤️ <span id="hearts">3</span></span>
+        <span id="question-count">5 Questions</span>
+      </div>
+      <div class="question-area">
+        <img src="assets/img/student-confused.png" alt="Confused student" id="student-avatar">
+        <div id="speech-bubble">I learned today that this device measures voltage. What is it called?</div>
+      </div>
+      <div id="answers">
+        <button onclick="checkAnswer('multimeter')">Multimeter</button>
+        <button onclick="checkAnswer('resistor')">Resistor</button>
+        <button onclick="checkAnswer('oscilloscope')">Oscilloscope</button>
+      </div>
+    </section>
+
+    <!-- Slide 3: Results Screen -->
+    <section id="results-screen" class="slide hidden">
+      <h2>📚 Lesson Complete!</h2>
+      <p>Your final score: <strong id="final-grade"></strong></p>
+      <div id="summary">
+        <h3>Your Answers:</h3>
+        <ul id="answer-summary"></ul>
+      </div>
+      <p id="motivational-message"></p>
+      <button onclick="location.reload()">🔁 Restart</button>
+    </section>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

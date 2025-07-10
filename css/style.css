@@ -1,0 +1,125 @@
+/* ElectroEasy CSS */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e6f2f5;
+  color: #2c3e50;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.slide.active,
+.slide:not(.hidden) {
+  display: flex;
+}
+
+h1, h2 {
+  color: #0087a2;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #00bcd4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #008fa3;
+}
+
+.mode-select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#scoreboard, .game-header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.question-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#student-avatar {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#speech-bubble {
+  background-color: #f0f9ff;
+  border: 2px solid #0087a2;
+  padding: 16px;
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+#answers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#answers button {
+  flex: 1 0 40%;
+  background-color: #4caf50;
+}
+
+#answers button:hover {
+  background-color: #388e3c;
+}
+
+#results-screen ul {
+  list-style: none;
+  padding: 0;
+}
+
+#results-screen li {
+  margin: 8px 0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.hidden {
+  display: none !important;
+}
