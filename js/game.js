@@ -20,6 +20,7 @@ const practicalQuestions = [
 
 // State variables
 let hearts, score, questionIndex, answerLog, currentQuestions;
+let bonusEnabled = true;  // Enables bonus point logic globally
 
 function initGame() {
   hearts = 3;
@@ -37,8 +38,14 @@ function initGame() {
 function checkAnswer(selected) {
   const currentQ = currentQuestions[questionIndex];
   const correct = selected === currentQ.correctAnswer;
-  
-  if (!correct) {
+
+if (correct) {
+  if (bonusEnabled) {
+    score += 10;
+    showBonusMessage();
+  }
+}
+ else {
     hearts--;
     score -= 20;
   }
@@ -57,8 +64,8 @@ function checkAnswer(selected) {
     updateStats(getGrade(score), hearts, currentQuestions.length, questionIndex);
     updateQuestionUI(currentQuestions[questionIndex]);
   }
-  
 }
+
 
 function getGrade(score) {
   if (score >= 90) return "A+";

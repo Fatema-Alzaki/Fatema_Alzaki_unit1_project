@@ -36,3 +36,14 @@ function showResultScreen(score, answerLog) {
     score === 'C' ? "Keep going! 🔧" :
     "Don't worry, try again! 🛠️";
 }
+
+function showBonusMessage() {
+  const msg = document.createElement('div');
+  msg.innerText = "+10 Bonus!";
+  msg.style.color = "green";
+  msg.style.fontWeight = "bold";
+  msg.style.fontSize = "18px";
+  msg.style.marginTop = "10px";
+  document.getElementById('answers').appendChild(msg);
+  setTimeout(() => msg.remove(), 1500);
+}
