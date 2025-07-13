@@ -1,6 +1,7 @@
 /* ElectroEasy CSS */
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -12,9 +13,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 100vh;
-  padding: 20px;
+  padding: 10px;
 }
 
 .slide {
@@ -22,9 +23,10 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   text-align: center;
-  padding: 40px;
+  padding: 30px 20px;
+  margin: 20px auto;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
@@ -37,6 +39,12 @@ main {
 
 h1, h2 {
   color: #0087a2;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#results-screen h2 {
+  margin-bottom: 10px;
 }
 
 button {
@@ -57,9 +65,16 @@ button:hover {
 
 .mode-select {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
   margin-bottom: 20px;
+}
+
+#btn-start {
+  margin-top: 30px;
 }
 
 #scoreboard, .game-header {
@@ -78,17 +93,18 @@ button:hover {
 }
 
 #student-avatar {
-  width: 100px;
+  width: 150px;
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #speech-bubble {
   background-color: #f0f9ff;
   border: 2px solid #0087a2;
-  padding: 16px;
+  padding: 20px;
   border-radius: 12px;
   max-width: 100%;
+  font-size: 18px;
 }
 
 #answers {
@@ -101,6 +117,8 @@ button:hover {
 #answers button {
   flex: 1 0 40%;
   background-color: #4caf50;
+  font-size: 16px;
+  padding: 12px;
 }
 
 #answers button:hover {
@@ -110,6 +128,8 @@ button:hover {
 #results-screen ul {
   list-style: none;
   padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 #results-screen li {
