@@ -8,6 +8,13 @@ function selectMode(mode) {
   document.getElementById('btn-practical').classList.remove('active');
   document.getElementById(`btn-${mode}`).classList.add('active');
   document.getElementById('btn-next').disabled = false;
+
+  if (!selectedMode) return;
+  if (selectedMode) {
+      document.getElementById('main-menu').classList.add('hidden');
+     document.getElementById('teacher-screen').classList.remove('hidden');
+  }
+
 }
 
 
@@ -24,6 +31,9 @@ let scoreBoard = {
 
 document.getElementById('btn-next').addEventListener('click', () => {
   if (!selectedMode) return;
-  document.getElementById('main-menu').classList.add('hidden');
-  document.getElementById('teacher-screen').classList.remove('hidden');
+  if (selectedMode) {
+      document.getElementById('main-menu').classList.add('hidden');
+     document.getElementById('teacher-screen').classList.remove('hidden');
+  }
+
 });
