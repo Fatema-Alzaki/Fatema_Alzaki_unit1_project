@@ -23,7 +23,7 @@ let scoreBoard = {
 };
 
 document.getElementById('btn-next').addEventListener('click', () => {
-  if (!selectedMode) return; 
+  if (!selectedMode) return;
   document.getElementById('main-menu').classList.add('hidden');
   document.getElementById('teacher-screen').classList.remove('hidden');
 });
