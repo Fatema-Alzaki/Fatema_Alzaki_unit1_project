@@ -109,7 +109,16 @@ button:hover {
   margin-bottom: 10px;
 }
 
-#speech-bubble {
+#game-speech-bubble {
+  background-color: #f0f9ff;
+  border: 2px solid #0087a2;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#teacher-speech-bubble {
   background-color: #f0f9ff;
   border: 2px solid #0087a2;
   padding: 20px;

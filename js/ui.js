@@ -1,7 +1,7 @@
 // ui.js
 
 function updateQuestionUI(questionObj) {
-  document.getElementById('speech-bubble').innerText = questionObj.prompt;
+  document.getElementById('game-speech-bubble').innerText = questionObj.prompt;
   const buttons = document.querySelectorAll('#answers button');
   questionObj.options.forEach((opt, i) => {
     buttons[i].innerText = opt;
