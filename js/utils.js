@@ -15,7 +15,9 @@ function startGame() {
     return;
   }
   document.getElementById('main-menu').classList.add('hidden');
+  document.getElementById('Teacher-screen').classList.remove('hidden');
   document.getElementById('game-screen').classList.remove('hidden');
+
   initGame();
 }
 let scoreBoard = {
