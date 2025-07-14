@@ -7,7 +7,9 @@ function selectMode(mode) {
   document.getElementById('btn-theory').classList.remove('active');
   document.getElementById('btn-practical').classList.remove('active');
   document.getElementById(`btn-${mode}`).classList.add('active');
+  document.getElementById('btn-next').disabled = false;
 }
+
 
 function startGame() {
   initGame();
