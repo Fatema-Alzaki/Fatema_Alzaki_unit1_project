@@ -28,7 +28,7 @@ function initGame() {
   questionIndex = 0;
   answerLog = [];
 
-  // Use the selectedMode variable from utils.js
+ 
   currentQuestions = selectedMode === "theory" ? theoryQuestions : practicalQuestions;
 
   updateStats(getGrade(score), hearts, currentQuestions.length, questionIndex);
