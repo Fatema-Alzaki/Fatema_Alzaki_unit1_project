@@ -7,15 +7,10 @@ function selectMode(mode) {
   document.getElementById('btn-theory').classList.remove('active');
   document.getElementById('btn-practical').classList.remove('active');
   document.getElementById(`btn-${mode}`).classList.add('active');
-  document.getElementById('btn-next').disabled = false;
-
-  if (!selectedMode) return;
-  if (selectedMode) {
-      document.getElementById('main-menu').classList.add('hidden');
-     document.getElementById('teacher-screen').classList.remove('hidden');
-  }
-
+  document.getElementById('main-menu').classList.add('hidden');
+  document.getElementById('teacher-screen').classList.remove('hidden');
 }
+
 
 
 function startGame() {
@@ -31,9 +26,10 @@ let scoreBoard = {
 
 document.getElementById('btn-next').addEventListener('click', () => {
   if (!selectedMode) return;
-  if (selectedMode) {
-      document.getElementById('main-menu').classList.add('hidden');
-     document.getElementById('teacher-screen').classList.remove('hidden');
-  }
 
+  document.getElementById('teacher-screen').classList.add('hidden');
+  document.getElementById('game-screen').classList.remove('hidden');
+
+  initGame();
 });
+
