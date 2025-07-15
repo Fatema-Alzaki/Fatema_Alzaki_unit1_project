@@ -12,7 +12,6 @@ function selectMode(mode) {
 }
 
 
-
 function startGame() {
   initGame();
   document.getElementById('teacher-screen').classList.add('hidden');
