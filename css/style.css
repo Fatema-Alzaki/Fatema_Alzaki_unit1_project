@@ -109,6 +109,12 @@ button:hover {
   margin-bottom: 10px;
 }
 
+#student-bye {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 #game-speech-bubble {
   background-color: #f0f9ff;
   border: 2px solid #0087a2;
