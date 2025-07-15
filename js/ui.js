@@ -13,7 +13,10 @@ function updateStats(score, hearts, total, current) {
   document.getElementById('grade').innerText = score;
   document.getElementById('hearts').innerText = hearts;
   document.getElementById('question-count').innerText = `${total - current} Questions`;
+  const progressPercent = Math.round((current / total) * 100);
+  document.getElementById('progress-bar').style.width = `${progressPercent}%`;
 }
+
 
 function showResultScreen(score, answerLog) {
   document.getElementById('game-screen').classList.add('hidden');

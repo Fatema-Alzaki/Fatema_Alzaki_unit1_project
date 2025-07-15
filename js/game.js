@@ -75,5 +75,12 @@ function getGrade(score) {
   return "F";
 }
 
+// function(){
+// const studentAvatar= document.images()
+// if (score >= 90){
+// studentAvatar.src='assets/'
 
+// }
+
+// }
 

@@ -170,3 +170,20 @@ button:hover {
 .hidden {
   display: none !important;
 }
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #d0ebf3;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #00bcd4;
+  transition: width 0.3s ease-in-out;
+}
+
