@@ -1,33 +1,36 @@
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #e6f2f5; 
+  background-color: #e6f2f5;
+  color: #2c3e50;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 main {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  align-items: flex-start;
+  padding: 20px 10px;
+  box-sizing: border-box;
 }
 
 .slide {
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 90vw;
-  height: 90vh;
+  max-width: 700px;
+  min-height: 85vh;
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px 25px;
   margin: auto;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -50,45 +53,52 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
-/* button {
-  padding: 12px 24px;
-  margin: 10px;
-  border: none;
-  border-radius: 8px;
-  font-size: 3vw;
-  background-color: #00bcd4;
-  color: white;
+#student-result-avatar {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+button {
+ background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-} */
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
-button:hover {
-  background-color: #008fa3;
+.button:hover {
+   background-color: #fff;
+}
+
+.button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
 }
 
 .mode-select {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   max-width: 400px;
   margin-bottom: 20px;
-  margin-left: 10px
-}
-
-.choice-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #00bcd4;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border: 0;
-  border-radius: 10px;
-  padding: 10px 15px;
-  font-size: 3vw;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
 .game-header, #scoreboard {
@@ -116,7 +126,7 @@ button:hover {
 #game-speech-bubble,
 #teacher-speech-bubble {
   background-color: #f0f9ff;
-  border: 2px solid #0087a2;
+  border: 2px solid #76d4e7;
   padding: 20px;
   border-radius: 12px;
   max-width: 90%;
@@ -133,13 +143,13 @@ button:hover {
 
 #answers button {
   flex: 1 0 40%;
-  background-color: #4caf50; 
+  background-color: #6faf4c; 
   font-size: 16px;
   padding: 12px;
 }
 
 #answers button:hover {
-  background-color: #388e3c; 
+  background-color: #e8cb81; 
 }
 
 #results-screen ul {
@@ -175,4 +185,32 @@ button:hover {
   width: 0%;
   background-color: #00bcd4;
   transition: width 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .slide {
+    padding: 20px 12px;
+  }
+
+  #student-avatar,
+  #teacher-avatar,
+  #student-bye,
+  #student-result-avatar {
+    width: 100px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  #game-speech-bubble,
+  #teacher-speech-bubble {
+    font-size: 16px;
+  }
+
+  .mode-select {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

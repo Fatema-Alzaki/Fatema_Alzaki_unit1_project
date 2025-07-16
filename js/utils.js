@@ -1,5 +1,3 @@
-// utils.js
-
 // variable tracks which mode got selected
 let selectedMode = null;
 
