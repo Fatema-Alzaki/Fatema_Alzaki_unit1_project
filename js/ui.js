@@ -1,5 +1,16 @@
 // ui.js
 
+const sounds = {
+   wrong_Answer : new Audio('../assets/audio/wrong answer.mp3'),
+   Right_Answer : new Audio('../assets/audio/correct answer.mp3'),
+   Whole_game : new Audio('../assets/audio/the whole game sound effect.mp3'),
+   AA_game : new Audio('../assets/audio/happy sound effect A+.mp3'),
+   A_game : new Audio('../assets/audio/yayy sound effect A.mp3'),
+   B_game: new Audio('../assets/audio/sad sound effect (B).mp3'),
+   C_game: new Audio('../assets/audio/crying and coffing (C).mp3'),
+   F_game: new Audio('../assets/audio/crying (fail).mp3')
+}
+
 function updateQuestionUI(questionObj) {
   document.getElementById('game-speech-bubble').innerText = questionObj.prompt;
 
@@ -62,22 +73,27 @@ function showResultScreen(score, answerLog) {
     case 'A+':
       message.innerText = "Amazing work! ⚡";
       resultImg.src = "assets/img/90 avatar.png";
+      AA_game.play()
       break;
     case 'A':
       message.innerText = "Great job! 💡";
       resultImg.src = "assets/img/80 avatar.png";
+      A_game.play()
       break;
     case 'B':
       message.innerText = "Nice effort! 🔋";
       resultImg.src = "assets/img/70 avatar.png";
+      B_game.play()
       break;
     case 'C':
       message.innerText = "Keep going! 🔧";
       resultImg.src = "assets/img/xxx.png";
+      C_game.play()
       break;
     default:
       message.innerText = "Don't worry, try again! 🛠️";
       resultImg.src = "assets/img/60 avatar.png";
+      F_game.play()
   }
 }
 
@@ -92,3 +108,4 @@ function showBonusMessage() {
   document.getElementById('answers').appendChild(msg);
   setTimeout(() => msg.remove(), 1500);
 }
+
