@@ -50,17 +50,17 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
-button {
+/* button {
   padding: 12px 24px;
   margin: 10px;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 3vw;
   background-color: #00bcd4;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
+} */
 
 button:hover {
   background-color: #008fa3;
@@ -68,10 +68,27 @@ button:hover {
 
 .mode-select {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   max-width: 400px;
   margin-bottom: 20px;
+  margin-left: 10px
+}
+
+.choice-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00bcd4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 3vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 .game-header, #scoreboard {
