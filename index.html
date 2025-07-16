@@ -8,37 +8,38 @@
 </head>
 <body>
   <main>
-    <!-- Slide 1: Main Menu -->
+    <!-- main menu -->
     <section id="main-menu" class="slide">
-      <h1>🔌 ElectroEasy</h1>
+      <h1>ElectroEasy</h1>
       <div class="mode-select">
         <button id="btn-theory" onclick="selectMode('theory')">Theory</button>
         <button id="btn-practical" onclick="selectMode('practical')">Practical</button>
       </div>
- 
     </section>
 
-    <!-- Slide 2: Teacher Screen -->
+    <!-- teacher screen -->
     <section id="teacher-screen" class="slide hidden">
       <img src="assets/img/teacher explain.png" alt="Teacher explaining" id="teacher-avatar">
       <div id="teacher-speech-bubble">This is the lesson of today</div>
       <button id="btn-next">Next</button>
     </section>
 
-    <!-- Slide 3: Game Screen -->
+    <!-- game screen -->
     <section id="game-screen" class="slide hidden">
       <div class="game-header">
         <div class="progress-bar-container">
-        <div id="progress-bar"></div>
+          <div id="progress-bar"></div>
         </div>
         <span>Score: <strong id="grade">A+</strong></span>
         <span>❤️ <span id="hearts">3</span></span>
         <span id="question-count">5 Questions</span>
       </div>
+
       <div class="question-area">
         <img src="assets/img/confused student.png" alt="Confused student" id="student-avatar">
-        <div id="game-speech-bubble">I am so confused I don't understand I need your help in this quiz</div>
+        <div id="game-speech-bubble">I’m kinda stuck Can you help me?</div>
       </div>
+
       <div id="answers">
         <button onclick="checkAnswer('multimeter')">Multimeter</button>
         <button onclick="checkAnswer('resistor')">Resistor</button>
@@ -46,17 +47,17 @@
       </div>
     </section>
 
-    <!-- Slide 4: Results Screen -->
+    <!-- results screen -->
     <section id="results-screen" class="slide hidden">
-      <h2>📚 Lesson Complete!</h2>
-       <img src="assets/img/placeholder.png" alt="Student result" id="student-result-avatar">
+      <h2>Lesson Complete!</h2>
+      <img src="assets/img/placeholder.png" alt="Student result" id="student-result-avatar">
       <p>Your final score: <strong id="final-grade"></strong></p>
       <div id="summary">
         <h3>Your Answers:</h3>
         <ul id="answer-summary"></ul>
       </div>
       <p id="motivational-message"></p>
-      <button onclick="location.reload()">🔁 Restart</button>
+      <button onclick="location.reload()">Try Again</button>
     </section>
   </main>
 
@@ -64,5 +65,4 @@
   <script src="js/ui.js"></script>
   <script src="js/game.js"></script>
 </body>
-
 </html>
