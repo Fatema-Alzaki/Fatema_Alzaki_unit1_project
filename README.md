@@ -5,7 +5,10 @@
 
 ## Project Overview
 
-**ElectroEasy** is a simple, interactive quiz game designed to test and reinforce students’ knowledge of basic electrical components and concepts. This game has two distinct modes: **Theory** and **Practical**. The game presents a series of questions related to electronics theory and practical electrical knowledge, helping users learn in a fun and engaging way. It uses a dynamic question presentation format, visual feedback, and a motivational scoring system.
+**ElectroEasy**
+![ElectroEasy logo](./assets/img/logo_of_the_game_-removebg-preview.png)
+
+ is a simple, interactive quiz game designed to test and reinforce students’ knowledge of basic electrical components and concepts. This game has two distinct modes: **Theory** and **Practical**. The game presents a series of questions related to electronics theory and practical electrical knowledge, helping users learn in a fun and engaging way. It uses a dynamic question presentation format, visual feedback, and a motivational scoring system.
 
 ---
 
@@ -113,6 +116,28 @@ The JavaScript files handle the game’s logic:
 ## References
 ![ElectroEasy Game Wireframe](https://media.discordapp.net/attachments/1390088235891298396/1392641929002352761/file-TTg8kKcUP2VqRPiRoiAsVr.png?ex=6870465d&is=686ef4dd&hm=ad1882ecd3f2e47a4b5cd41d9227aed95c69b2717b5a82be0692a5c858ec954e&=&format=webp&quality=lossless&width=1284&height=1216)
 
+1. **Button Design Inspiration**  
+   Source: [GetCSSScan – CSS Buttons Examples](https://getcssscan.com/css-buttons-examples)
+
+2. **HTML5 & CSS3 Structure**  
+   Reference: [MDN Web Docs – HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)  
+   Reference: [MDN Web Docs – CSS Styling](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+3. **JavaScript DOM Manipulation**  
+   Reference: [MDN Web Docs – Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+
+4. **Responsive Design Techniques**  
+   Reference: [CSS Tricks – Responsive Design](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
+
+5. **Educational Content (Theory & Practical MCQs)**  
+   Curated and written by: Fatema Alzaki based on coursework and personal electronics study
+
+6. **Images and Avatars**  
+   Source: Custom-designed and royalty-free assets from Freepik & manually created PNGs
+
 ## You can check the [WireFrame here](https://drive.google.com/drive/folders/1PdHgi1IGEW4giMEXSoOJlYWYUAAjWao7?usp=sharing)
 
 ## You can check the [Trello To Do List here](https://trello.com/invite/b/686e636a6221a8c790788122/ATTIf2ab680e17f33265d939c0ee7946989619EA5869/project-1)
+
+## You can check the [Game link here](https://lyrical-print.surge.sh/)
+
