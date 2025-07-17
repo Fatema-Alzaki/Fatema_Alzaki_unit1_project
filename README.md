@@ -139,5 +139,5 @@ The JavaScript files handle the game’s logic:
 
 ## You can check the [Trello To Do List here](https://trello.com/invite/b/686e636a6221a8c790788122/ATTIf2ab680e17f33265d939c0ee7946989619EA5869/project-1)
 
-## You can check the [Game link here](https://lyrical-print.surge.sh/)
+## You can check the [Game link here](https://electroeasy.surge.sh/)
 
