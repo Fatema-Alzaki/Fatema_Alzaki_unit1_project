@@ -1,6 +1,3 @@
-// Game logic for ElectroEasy
-
-// Questions for each mode
 const theoryQuestions = [
   {
     prompt: "This component resists electrical current. What is it?",
