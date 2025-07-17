@@ -12,6 +12,68 @@
 
 ---
 
+## Pseudocode
+```
+START GAME
+1. Show Main Menu
+    - Display ElectroEasy logo
+    - Show two buttons: [Theory] and [Practical]
+    - When a button is clicked:
+        → Save selectedMode = "theory" or "practical"
+        → Highlight selected mode
+
+2. On "Proceed" or "Next" click:
+    - If a mode is selected:
+        → Hide main menu
+        → Show Teacher Screen
+        → Display mode explanation in speech bubble
+    - Else:
+        → Show alert: "Please select a mode to continue"
+
+3. On Teacher Screen "Next" click:
+    - Hide teacher screen
+    - Show Game Screen
+    - Initialize game variables:
+        → hearts = 3
+        → score = 100
+        → questionIndex = 0
+        → currentQuestions = based on selectedMode
+        → Call showQuestion()
+
+4. Function showQuestion():
+    - Display question from currentQuestions[questionIndex]
+    - Display answer options on buttons
+
+5. When an answer is clicked:
+    - Check if selected answer matches correctAnswer
+        - If correct:
+            → Optional: Add bonus if applicable
+        - If incorrect:
+            → hearts -= 1
+            → score -= 20
+    - Save answer to answerLog
+    - Move to next question:
+        - If hearts == 0 OR questionIndex == total:
+            → Go to Results Screen
+        - Else:
+            → Call showQuestion()
+
+6. Show Results Screen:
+    - Calculate final grade based on score:
+        → A+ (90+), A (80–89), B (70–79), C (60–69), F (<60)
+    - Display:
+        → Final avatar (based on grade)
+        → Grade letter
+        → Motivational message
+        → Answer summary (correct/incorrect)
+
+7. "Try Again" button:
+    - Reload the page and reset game
+
+END GAME
+```
+
+
 ## Game Flow
 
 ### **Slide 1: Main Menu**
